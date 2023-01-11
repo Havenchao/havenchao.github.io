@@ -1,0 +1,319 @@
+
+/*////////////////////////////////////Start 320px x 480px\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+    .tl-contact-bottom-info-phone{
+        padding-right: 10px;
+    }
+    .count-down-wrapper{
+        width: 92%;
+    }
+    /* menu  */
+    .tl-about-content h1, .tl-contact-content h1, .tl-service-content h1{
+        padding-top: 25%;
+    }
+
+
+    /* service css*/
+    .tl-service-left{
+        float: none;
+        width: 100%;
+        padding: 0 0 15px;
+    }
+    .tl-service-icon i{
+        margin: 0 auto;
+    }
+    .tl-service-right{
+        width: 100%;
+        float: none;
+    }
+    .tl-service-icon i{
+        border: 1px solid rgba(107, 90, 89, 0.6);
+    }
+
+
+    /*About/ contact css*/
+    .tl-contact-bottom-info{
+        padding-bottom: 20px;
+    }
+    .contact-title{
+        font-size: 18px;
+    }
+    .tl-about-content, .tl-contact-content, .tl-service-content{
+        padding: 10px;
+    }
+    .tl-about-left {
+        float: none;
+        padding-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .tl-about-right{
+        float: none;
+        width: 100%;
+        padding-top: 15px;
+    }
+    .tl-about-bottom-contact-info-email{
+        padding-right: 0;
+        float: none;
+        padding-bottom: 15px;
+    }
+    .tl-about-bottom-contact-info-address{
+        float: none;
+    }
+    .tl-about-logo{
+        padding-top: 0;
+    }
+    .contact-title{
+        width: 110px;
+    }
+    .contact-link span{
+        display: none !important;
+    }
+    .tl-home a, .tl-about a, .tl-service a, .tl-contact a{
+        width: 50px !important;
+    }
+    .tl-contact-content  p{
+        padding-left: 15px;
+    }
+
+
+
+    .tl-large-header{
+        height: 1600px !important;
+    }
+    .tl-large-header canvas{
+        height: 1600px !important;
+    }
+    .subscribe-inner-bottom-content-right .btn{
+        margin-left: 10px;
+    }
+    .subscribe-innner-bottom-content-left{
+        width: 60%;
+    }
+    .subscribe-innner-bottom-content-right{
+        width: 40%;
+    }
+    .subscribe-innner-bottom-content-right .btn{
+        font-size: 15px;
+        padding: 15px 5px 10px;
+    }
+    .connect-us li a{
+        margin: 0;
+    }
+    .tl-social{
+        margin-top: 15px;
+    }
+    .count-down li{
+        margin-bottom: 10px;
+    }
+    .tg-subscribe-inner-content{
+        width: 95%;
+    }
+    .subscribe-inner-bottom-content-left{
+        width: 60%;
+    }
+    .subscribe-inner-bottom-content-right{
+        width: 40%;
+    }
+    .subscribe-inner-bottom-content-right .btn{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    /* ---------------------------------------
+        Custom menu css
+      --------------------------------------*/
+    .tl-home a,.tl-about a,.tl-service a,.tl-contact a{
+        top: 10px;
+    }
+    .tl-home a{
+        left:15%;
+    }
+    .tl-about a {
+        left:33%;
+    }
+    .tl-service a {
+        left: 51%;
+    }
+    .tl-contact a {
+        left: 69%;
+    }
+
+}
+
+
+/*////////////////////////////////////Start 480px x 767px\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .tl-about-right{
+        width: 80%;
+    }
+    .contact-link span{
+        display: none !important;
+    }
+    .tl-home a, .tl-about a, .tl-service a, .tl-contact a{
+        width: 50px !important;
+    }
+    .tl-contact-content  p{
+        padding-left: 15px;
+    }
+    .count-down-wrapper{
+        width: 92%;
+    }
+    .tl-about-content h1, .tl-contact-content h1, .tl-service-content h1{
+        padding-top: 15%;
+    }
+    /* service css*/
+    .tl-about-content, .tl-contact-content, .tl-service-content{
+        padding: 20px;
+    }
+    .tl-service-left{
+        float: none;
+        width: 100%;
+        padding: 0 0 15px;
+    }
+    .tl-service-icon i{
+        margin: 0 auto;
+    }
+    .tl-service-right{
+        width: 100%;
+        float: none;
+    }
+    .tl-service-icon i{
+        border: 1px solid rgba(107, 90, 89, 0.6);
+    }
+    /* contact us */
+    .tl-contact-bottom-info{
+        padding-bottom: 20px;
+    }
+
+
+
+    .tl-large-header{
+        height: 1600px !important;
+    }
+    .tl-large-header canvas{
+        height: 1600px !important;
+    }
+    .subscribe-innner-bottom-content-left{
+        width: 70%;
+    }
+    .subscribe-innner-bottom-content-right{
+        width: 30%;
+    }
+    .count-down li{
+        margin-bottom: 10px;
+    }
+    .tg-subscribe-inner-content{
+        width: 95%;
+    }
+    .subscribe-inner-bottom-content-left{
+        width: 60%;
+    }
+    .subscribe-inner-bottom-content-right{
+        width: 40%;
+    }
+    /* ---------------------------------------
+        Custom menu css
+      --------------------------------------*/
+    .tl-home a,.tl-about a,.tl-service a,.tl-contact a{
+        top: 10px;
+    }
+    .tl-home a{
+        left:15%;
+    }
+    .tl-about a {
+        left:33%;
+    }
+    .tl-service a {
+        left: 51%;
+    }
+    .tl-contact a {
+        left: 69%;
+    }
+
+
+    /* About page css */
+    .tl-about-left{
+        padding-right: 20px;
+        width: 20%;
+    }
+    .tl-about-logo > img{
+        height: auto;
+        max-width: 100%;
+    }
+    .tl-about-bottom-contact-info-email{
+        padding-right: 25px;
+    }
+
+
+
+
+}
+
+/*////////////////////////////////////Start 768px x 1024px\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /*About/Contact css*/
+    .tl-contact-content p{
+        padding-left: 15px;
+    }
+    .tl-about-content, .tl-contact-content, .tl-service-content{
+        padding-left: 15px;
+    }
+    .tl-about-top-info{
+        width: 85%;
+    }
+    .tl-about-left{
+        padding-right: 0;
+    }
+    .tl-contact-bottom-info{
+        padding-bottom: 20px;
+    }
+
+
+    .tg-subscribe-inner-content{
+        width: 95%;
+    }
+    .count-down-wrapper{
+        width: 62%;
+    }
+    .count-down li{
+        margin-bottom: 10px;
+    }
+    /* ---------------------------------------
+       Custom menu css
+     --------------------------------------*/
+    .tl-about a {
+        top: 25%;
+    }
+    .tl-service a {
+        top: 31%;
+    }
+    .tl-contact a {
+        top: 37%;
+    }
+    /*service page */
+    .tl-service-left{
+        width: 20%;
+    }
+    .tl-service-right{
+        width: 80%;
+    }
+
+
+
+}
+
+/*////////////////////////////////////Start 1024px x 1200px\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    .count-down-wrapper {
+        width: 48%;
+    }
+    .count-down li{
+        margin-bottom: 10px;
+    }
+
+
+}

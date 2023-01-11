@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> CGP Management - Coming Soon</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"> 
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon.png">
+	<!-- CSS start here -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/menu.transition.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animations.css" />
+	<!-- CSS end here -->
+	<!-- Google fonts start here -->
+  <link href="http//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+	<!-- Google fonts end here -->
+</head>
+<body class="themology">
+  <!-- Preloader start here -->
+  <div id="preloader">
+      <div id="status"></div>
+  </div>
+	<!-- Preloader end here -->
+
+  <!-- Main Page -->
+  <div id="page-main" class="page-perspective">
+  <!-- Start home page -->  
+    <div id="home" class="rmt-page rmt-page-1">
+    <!--Start menu--> 
+        <section class="tg-single-page">
+            <div class="tl-home">
+                <a onClick="gotoPage2(0)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-home fa-1x"></i>
+                    <span class="text" style="display: none;">Home</span>
+                </a>
+            </div>
+            <div class="tl-about">
+                <a onClick="gotoPage1(1)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-info-circle fa-1x"></i>
+                    <span class="text" style="display: none;">About</span>
+                </a>
+            </div>
+            <div class="tl-service">
+                <a onClick="gotoPage3(2)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-suitcase fa-1x"></i>
+                    <span class="text" style="display: none;">Service</span>
+                </a>
+            </div>
+            <div class="tl-contact">
+                <a onClick="gotoPage4(3)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-envelope-o fa-1x"></i>
+                    <span class="text" style="display: none;">Contact</span>
+                </a>
+            </div>
+        </section>
+        <!--Start menu-->
+
+        <!--Start slider area--> 
+        <section class="water-filter">
+            <div id="large-header" class="tl-large-header">
+                <div class="patterns">
+                    <canvas id="water-canvas"></canvas>
+                    <!-- Contact Icon end here -->
+                    <div class="main-title">
+                        <div class="themology-banner-area">
+                            <!-- Main container start here -->
+                            <section class="container main-wrapper">
+                                <!-- Logo start here -->
+                                <section id="logo" class="fade-down">
+                                    <a href="#" title="Themology - Coming Soon HTML Template">
+                                        <img src="img/cgp_logo.png" alt="Themology - Coming Soon HTML Template">
+                                    </a>
+                                </section>
+                                <!-- Logo end here -->
+                                <!-- Slogan start here -->
+                                <section class="slogan fade-down">
+                                    <div class="main-title-content">
+                                        <h1>We're coming soon</h1>
+                                        <p>We are working very hard on the new version of our site. Stay tuned!</p>
+                                    </div>
+                                </section>
+                                <!-- Slogan end here -->
+                                <!-- Count Down start here -->
+                                <section class="count-down-wrapper fade-down">
+                                    <ul class="row count-down">
+                                        <li class="col-md-3 col-sm-6">
+                                            <input class="knob days" data-readonly=true data-min="0" data-max="365" data-width="140" data-height="140" data-thickness="0.09" data-fgcolor="#f5fea6" data-bgColor="#3e454d" data-angleOffset="180">
+                                            <span id="days-title">days</span>
+                                        </li>
+                                        <li class="col-md-3 col-sm-6">
+                                            <input class="knob hour" data-readonly=true data-min="0" data-max="24" data-width="140" data-height="140" data-thickness="0.09" data-fgcolor="#c8feec" data-bgColor="#3e454d" data-angleOffset="180">
+                                            <span id="hours-title">hours</span>
+                                        </li>
+                                        <li class="col-md-3 col-sm-6">
+                                            <input class="knob minute" data-readonly=true data-min="0" data-max="60" data-width="140" data-height="140" data-thickness="0.09" data-fgcolor="#ffaeb6" data-bgColor="#3e454d" data-angleOffset="180">
+                                            <span id="mins-title">minutes</span>
+                                        </li>
+                                        <li class="col-md-3 col-sm-6">
+                                            <input class="knob second" data-readonly=true data-min="0" data-max="60" data-width="140" data-height="140" data-thickness="0.09" data-fgcolor="#e2fed3" data-bgColor="#3e454d" data-angleOffset="180">
+                                            <span id="secs-title">seconds</span>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </section>
+                            <!-- Count Down end here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End slider area--> 
+
+        <!-- Newsletter start here -->
+        <!-- subscribe section-->
+        <section class="subscribe-content-all">
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="subscribe-inner-content">
+                        Interested in our business? Subscribe to our newsletter.
+                    </div>
+                    <div class="subscribe-inner-bottom-content">
+                        <div class="subscribe-inner-bottom-content-left">
+                            <input type="text"  class="form-control">
+                        </div>
+                        <div class="subscribe-inner-bottom-content-right">
+                            <a role="button" href="#" class="btn btn-primary btn-lg">SUBSCRIBE</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <section class="tl-social">
+                        <!-- Social icons start here -->
+                        <!-- <ul class="connect-us">
+                            <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#" class="dribbble tool-tip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="pinterest tool-tip" title="Pinterest"><i class="fa fa-pinterest-square"></i></a></li>
+                        </ul> -->
+                        <!-- Social icons end here -->
+                    </section>
+                </div>
+            </div>
+        </section><!-- end of subscribe -->
+        <!-- Newsletter end here -->
+        <!-- Footer start here -->
+        <section class="tg-footer-content">
+            <div class="container">
+                <footer>
+                    <p class="footer-text">&copy; 2022. CGP Management Business Solutions</p>
+                </footer>
+            </div>
+        </section>
+        <!-- Footer end here -->
+    </div>  
+    <!-- End home page-->
+
+    <!-- Start about page -->
+    <div id="about" class="rmt-page rmt-page-2">
+    <!--Start menu-->   
+        <section class="tg-single-page">
+            <div class="tl-home">
+                <a onClick="gotoPage2(0)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-home fa-1x"></i>
+                    <span class="text" style="display: none;">Home</span>
+                </a>
+            </div>
+            <div class="tl-about">
+                <a onClick="gotoPage1(1)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-info-circle fa-1x"></i>
+                    <span class="text" style="display: none;">About</span>
+                </a>
+            </div>
+            <div class="tl-service">
+                <a onClick="gotoPage3(2)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-suitcase fa-1x"></i>
+                    <span class="text" style="display: none;">Service</span>
+                </a>
+            </div>
+            <div class="tl-contact">
+                <a onClick="gotoPage4(3)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-envelope-o fa-1x"></i>
+                    <span class="text" style="display: none;">Contact</span>
+                </a>
+            </div>
+        </section>
+        <!--End menu-->
+        <!--Start about page content--> 
+        <section class="water-filter">
+            <div class="large-header">
+                <div class="patterns">
+                    <div class="tl-about-content">
+                        <h1>About <span>US</span></h1>
+                        <div class="tl-about-left-img">
+                            <div class="tl-about-logo">
+                                <img src="img/cgp_logo_symbol.png" alt="CGP Management - Coming Soon">
+                            </div>
+                        </div>
+                        <div class="tl-about-right">
+                            <div class="tl-about-top-info">
+                                We're currently under construction. 
+                            </div>
+                            <div class="tl-about-bottom-contact-info">
+                                <div class="tl-about-bottom-contact-info-email">
+                                    <h3>Email</h3>
+                                    <p class="tl-email"><i class="fa fa-envelope-o"></i></p>
+                                    <p>service@cgpmanagement.net</p>
+                                </div>
+                                <!-- <div class="tl-about-bottom-contact-info-address">
+                                    <h3>Address</h3>
+                                    <p class="tl-map"><i class="fa fa-map-marker"></i></p>
+                                    <p>Street 23, City</p>
+                                    <p>223-33-1 State,Country</p>
+                                </div> -->
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--End about page content-->
+        <!-- Newsletter start here -->
+        <!-- subscribe section-->
+        <section class="subscribe-content-all-about">
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="subscribe-inner-content fade-down">
+                        Interested in our business? Subscribe to our newsletter.
+                    </div>
+                    <div class="subscribe-inner-bottom-content fade-down">
+                        <div class="subscribe-inner-bottom-content-left">
+                            <input type="text"  class="form-control">
+                        </div>
+                        <div class="subscribe-inner-bottom-content-right">
+                            <a role="button" href="#" class="btn btn-primary btn-lg">SUBSCRIBE</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <section class="tl-social">
+                        <!-- Social icons start here -->
+                        <!-- <ul class="connect-us row fade-down">
+                            <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#" class="dribbble tool-tip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="pinterest tool-tip" title="Pinterest"><i class="fa fa-pinterest-square"></i></a></li>
+                        </ul> -->
+                        <!-- Social icons end here -->
+                    </section>
+                </div>
+            </div>
+        </section><!-- end of subscribe -->
+        <!-- Newsletter end here -->
+        <!-- Footer start here -->
+        <section class="tg-footer-content">
+            <div class="container">
+                <footer class="fade-down">
+                    <p class="footer-text">&copy; 2022. CGP Management Business Solutions</p>
+                </footer>
+            </div>
+        </section>
+        <!-- Footer end here -->
+    </div>
+    <!-- End about page-->
+
+    <!-- Start service page -->
+    <div id="service" class="rmt-page rmt-page-3">
+    <!--Start menu-->  
+        <section class="tg-single-page">
+            <div class="tl-home">
+                <a onClick="gotoPage2(0)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-home fa-1x"></i>
+                    <span class="text" style="display: none;">Home</span>
+                </a>
+            </div>
+            <div class="tl-about">
+                <a onClick="gotoPage1(1)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-info-circle fa-1x"></i>
+                    <span class="text" style="display: none;">About</span>
+                </a>
+            </div>
+            <div class="tl-service">
+                <a onClick="gotoPage3(2)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-suitcase fa-1x"></i>
+                    <span class="text" style="display: none;">Service</span>
+                </a>
+            </div>
+            <div class="tl-contact">
+                <a onClick="gotoPage4(3)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-envelope-o fa-1x"></i>
+                    <span class="text" style="display: none;">Contact</span>
+                </a>
+            </div>
+        </section>
+        <!--End menu-->
+        <!--Start service page content-->
+        <section class="water-filter">
+            <div class="large-header">
+                <div class="patterns">
+                    <div class="tl-service-content">
+                        <h1>Our Service</h1>
+                        <p class="contact-text">
+                            We're under construction.
+                        </p>
+                        <!-- Services list start -->
+                        <!-- <div class="tl-single-service">
+                            <div class="tl-service-left">
+                                <div class="tl-service-icon">
+                                    <i class="fa fa-android"></i>
+                                </div>
+                            </div>
+                            <div class="tl-service-right">
+                                <div class="tl-service-desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div> -->
+                        <!-- <div class="tl-single-service">
+                            <div class="tl-service-left">
+                                <div class="tl-service-icon">
+                                    <i class="fa fa-apple"></i>
+                                </div>
+                            </div>
+                            <div class="tl-service-right">
+                                <div class="tl-service-desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div> -->
+                        <!-- <div class="tl-single-service">
+                            <div class="tl-service-left">
+                                <div class="tl-service-icon">
+                                    <i class="fa fa-html5"></i>
+                                </div>
+                            </div>
+                            <div class="tl-service-right">
+                                <div class="tl-service-desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div> -->
+                        <!-- Services list end -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--End service page content-->          
+        <!-- Newsletter start here -->
+        <!-- subscribe section-->
+        <section class="subscribe-content-all">
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="subscribe-inner-content fade-down">
+                        Interested in our business? Subscribe to our newsletter.
+                    </div>
+                    <div class="subscribe-inner-bottom-content fade-down">
+                        <div class="subscribe-inner-bottom-content-left">
+                            <input type="text"  class="form-control">
+                        </div>
+                        <div class="subscribe-inner-bottom-content-right">
+                            <a role="button" href="#" class="btn btn-primary btn-lg">SUBSCRIBE</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <section class="tl-social">
+                        <!-- Social icons start here -->
+                        <!-- <ul class="connect-us row fade-down">
+                            <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#" class="dribbble tool-tip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="pinterest tool-tip" title="Pinterest"><i class="fa fa-pinterest-square"></i></a></li>
+                        </ul> -->
+                        <!-- Social icons end here -->
+                    </section>
+                </div>
+            </div>
+        </section><!-- end of subscribe -->
+        <!-- Newsletter end here -->
+        <!-- Footer start here -->
+        <section class="tg-footer-content">
+            <div class="container">
+                <footer class="fade-down">
+                    <p class="footer-text">&copy; 2022. CGP Management Business Solutions.</p>
+                </footer>
+            </div>
+        </section>
+        <!-- Footer end here -->
+    </div>
+    <!-- End service page-->
+
+    <!-- Start contact page -->
+    <div id="contact" class="rmt-page rmt-page-4">
+    <!--Start menu-->
+        <section class="tg-single-page">
+            <div class="tl-home">
+                <a onClick="gotoPage2(0)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-home fa-1x"></i>
+                    <span class="text" style="display: none;">Home</span>
+                </a>
+            </div>
+            <div class="tl-about">
+                <a onClick="gotoPage1(1)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-info-circle fa-1x"></i>
+                    <span class="text" style="display: none;">About</span>
+                </a>
+            </div>
+            <div class="tl-service">
+                <a onClick="gotoPage3(2)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-suitcase fa-1x"></i>
+                    <span class="text" style="display: none;">Service</span>
+                </a>
+            </div>
+            <div class="tl-contact">
+                <a onClick="gotoPage4(3)" href="#" class="navigation arrow-right contact-link " style="width: 50px;">
+                    <i class="fa fa-envelope-o fa-1x"></i>
+                    <span class="text" style="display: none;">Contact</span>
+                </a>
+            </div>
+        </section>
+        <!--Start menu-->
+        <!--Start service page content-->
+        <section class="water-filter">
+            <div class="large-header">
+                <div class="patterns">
+                    <div class="tl-contact-content">
+                        <div class="row">
+                            <h1>Contact <span>US</span></h1>
+                            <div class="col-lg-5 col-md-5">
+                                <div class="contact-title">Our Contacts</div>
+                                <div class="tl-contact-border"></div>
+                                <p class="contact-text">
+                                    If you have any questions about our business please email us by filling in the form to the right.
+                                </p>
+                                <div class="tl-contact-bottom-info">
+                                    <div class="tl-contact-bottom-info-phone">
+                                        <p class="tl-phone"><i class="fa fa-tablet"></i></p>
+                                        <p class="tl-phone-no">+1 (954) 305-9296 </p>
+                                    </div>
+                                    <div class="tl-about-bottom-contact-info-address">
+                                        <p class="tl-contact"><i class="fa fa-envelope-o"></i></p>
+                                        <p>service@cgpmanagement.net</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-7">
+                                <div class="tl-about-top-info">
+                                    <form id="contactform" name="contactform" action="php/contact.php" method="post">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 columns">
+                                            <input type="text" id="name" placeholder="Name" name="name">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 columns">
+                                            <input type="text" id="email" placeholder="Email" name="email">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 columns">
+                                            <textarea id="comments" name="comments" placeholder="Message"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 columns">
+                                            <button name="submit" id="submit" class="contact-btn-submit" type="submit">Send</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--End service page content-->
+        <!-- Newsletter start here -->
+        <!-- subscribe section-->
+        <section class="subscribe-content-all">
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="subscribe-inner-content fade-down">
+                        Interested in our business? Subscribe to our newsletter to learn more!
+                    </div>
+                    <div class="subscribe-inner-bottom-content fade-down">
+                        <div class="subscribe-inner-bottom-content-left">
+                            <input type="text"  class="form-control">
+                        </div>
+                        <div class="subscribe-inner-bottom-content-right">
+                            <a role="button" href="subscribe.php" class="btn btn-primary btn-lg">SUBSCRIBE</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <section class="tl-social">
+                        <!-- Social icons start here -->
+                        <!-- <ul class="connect-us row fade-down">
+                            <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#" class="dribbble tool-tip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="pinterest tool-tip" title="Pinterest"><i class="fa fa-pinterest-square"></i></a></li>
+                        </ul> -->
+                        <!-- Social icons end here -->
+                    </section>
+                </div>
+            </div>
+        </section><!-- end of subscribe -->
+        <!-- Newsletter end here -->
+        <!-- Footer start here -->
+        <section class="tg-footer-content">
+            <div class="container">
+                <footer class="fade-down">
+                    <p class="footer-text">&copy; 2014. Pyachal. An Initiative of <a href="#" target="_blank">Pyachal</a></p>
+                </footer>
+            </div>
+        </section>
+        <!-- Footer end here -->
+    </div><!-- End contact page-->
+  </div>
+  <!-- End Main Page -->
+
+
+  <!-- Javascript framework and plugins start here -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="subscribe.js"></script>
+  <!-- Javascript framework and plugins end here -->
+</body>
+</html>

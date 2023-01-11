@@ -1,0 +1,1016 @@
+/* Table of content
+    1. Pre loader
+    2. General CSS
+    3. Logo
+    4. Slogan
+    5. Countdown
+    6. Newsletter subscribe
+    7. Social Links
+    8. Footer
+    9. About/Contact
+    10. Template color option
+    11. Responsive css
+    12. custom css
+    13. boot overwrite css
+    14. Service css
+    15. Navigation
+
+*/
+
+
+/*--------------------
+ 1. Pre loader
+ --------------------*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f3f7;
+    /* change if the mask should have another color then white */
+    z-index: 9999999;
+    /* makes sure it stays on top */
+}
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../img/status.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+/*--------------------
+ 2. General CSS
+ --------------------*/
+
+body {
+    font-family: 'Lato','Open Sans Condensed', sans-serif;
+    color: #8a8b8b;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: rgba(53, 10, 4, .5);
+	background-repeat:repeat;
+    font-weight: normal;
+}
+.clear{
+    clear:both;
+}
+body.yellow {
+    background-color: #ffcc00;
+}
+body.green {
+    background-color: #aaee06;
+}
+body.blue {
+    background-color: #00d2ff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+.homepage #logo {
+    margin: 0 0 26px 0;
+}
+.home {
+    background: #e6e9ed url(../img/bg-body.png) left top repeat-x;
+}
+.main-wrapper {
+    padding: 60px 20px 0 20px;
+    margin: 0 auto;
+}
+
+/*--------------------
+ 3.Logo
+ --------------------*/
+
+/*Logo Start Here*/
+
+#logo {
+    text-align: center;
+    margin: 0 0 5px;
+    padding: 0;
+}
+#logo a {
+    display: inline-block;
+    padding: 4px;
+}
+/*Logo End Here*/
+
+
+
+/*--------------------
+ 4. Slogan
+ --------------------*/
+
+.slogan {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.slogan h1 {
+    color: #fff;
+    font-size: 56px;
+    font-weight: 300;
+    padding: 45px 0 45px;
+}
+.slogan p {
+    margin: 10px 0;
+    padding: 0;
+    color: #3e3d3d;
+}
+/*SLogan end here*/
+
+
+/*--------------------
+ 5.Countdown
+ --------------------*/
+
+/* Countdown start here*/
+.count-down-wrapper{
+    width: 78%;
+    margin: 0 auto;
+}
+.count-down {
+    margin: 0 0 135px 0;
+    padding: 0;
+    text-align: center;
+    height: 240px;
+    height: auto;
+}
+.count-down li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 28px;
+    display: inline-block;
+    min-height: 195px;
+    background-color: rgba(253,175,143,.6);
+    margin-right: 20px;
+    width: 200px;
+    padding-top: 25px;
+}
+.count-down li div {
+    margin: 0 !important;
+    padding: 0;
+}
+.count-down li input {
+    font-size: 88px!important;    
+    width: 154px!important;
+    height: 98px!important;
+    margin: 70px 0 0 -210px !important;
+    font-weight: 300 !important;
+    color: #3e454d !important;
+    font-family: 'Lato', sans-serif !important;
+}
+#days-title,
+#hours-title,
+#mins-title,
+#secs-title {
+    display: block;   
+    text-transform: uppercase;
+    margin-top: -45px;
+    font-size: 16px;
+    position: relative;
+    z-index: 9 !important;
+    color: #3e454d;
+}
+/*Countdown end here*/
+
+/*----------------------------------------
+ 6. Newsletter subscribe
+ -----------------------------------------*/
+
+/* Newsletter subscribe start here*/
+
+.email-ico i {
+    font-size: 36px;
+    line-height: 72px;
+}
+
+.contact-form .form-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 4px !important;
+}
+.contact-form {
+    color: #8C8C8C;
+    float: none;
+    margin: 0 auto 60px auto;
+}
+
+.contact-form input {
+    background-color: #ffffff;
+    border: none;
+    height: 60px;
+    width: 100%;
+    padding: 0 22% 0 70px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.contact-form .error:focus,
+.contact-form .error {
+    border: 1px solid #ff0000;
+}
+.contact-form label.error {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    text-transform: none;
+    top: -28px;
+    border: none;
+    background-color: #FF0000;
+    padding: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.contact-form .email-ico {
+    position: absolute;
+    top: -6px;
+    left: 12px;
+    font-size: 24px;
+}
+.contact-form .btn-submit {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 20px;
+    border: none;
+    background-color: #ff382e;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    width: 90px;
+    height: 40px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.form-respond .content-message {
+    border-radius: 4px;
+    margin: 0 0 50px;
+    padding: 30px;
+}
+.form-respond .success {
+    color: #fff;
+    background-color: green;
+}
+.form-respond .content-message {
+    border-radius: 4px;
+    margin: 0 0 50px;
+    padding: 4px 8px;
+    color: #fff;
+    background-color: #FF0000;
+}
+.form-respond .content-message h2,
+.form-respond .content-message p {
+    display: inline;
+    font-size: 15px;
+}
+/*Newsletter subscribe end here*/
+
+
+/*----------------------------------------
+ 7. Social Links
+ -----------------------------------------*/
+
+/*Social Links start here*/
+
+.connect-us {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.connect-us li {
+    display: inline-block;
+    font-size: 28px;
+}
+.connect-us li a {
+    display: block;
+    margin: 0 3px;
+    width: 25px;
+    height: 25px;
+    line-height: 16px;
+    color: #fff;
+    background-color: #3e454d;
+    border-radius: 5px;
+}
+.tl-social li a i{
+    font-size: 16px;
+}
+.connect-us li a:hover {
+    color: #ffffff !important;
+}
+.connect-us li a.fb:hover {
+    color: #507cbe;
+}
+.connect-us li a.twitter:hover {
+    color: #62cdf2;
+}
+.connect-us li a.gplus:hover {
+    color: #ec5d48;
+}
+.connect-us li a.linkedin:hover {
+    color: #1e88c9;
+}
+.connect-us li a.ytube:hover {
+    color: #e64c38;
+}
+.connect-us li a.dribbble:hover {
+    color: #d34e95;
+}
+.connect-us li a.pinterest:hover {
+    color: #e94546;
+}
+/*Social Links end here*/
+
+
+/*----------------------------------------
+ 8. Footer
+ -----------------------------------------*/
+
+/*Footer start here*/
+
+footer {
+    text-align: center;
+    font-size: 16px;
+}
+.footer-text{
+	font-size: 12px;
+    color: #ffffff;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*Footer start here*/
+
+/*----------------------------------------
+ 9. About/Contact
+ -----------------------------------------*/
+
+/*About/Contact css start here*/
+
+.tl-about-left-img{
+    float: left;
+    padding-left: 18%;
+    width: 35%;
+    text-align: center;
+}
+.tl-about-left{
+    float: left;
+    padding-right: 85px;
+    width: 35%;
+    text-align: center;
+}
+.tl-about-right{
+    float: left;
+    width: 64%;
+}
+.tl-about-logo{
+    padding-top: 5%;
+}
+.about-us a {
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: #ff3b30;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    left: 1%;
+    font-size: 22px;
+    z-index: 999;
+}
+.about-us .tooltip-inner,
+.contact-us .tooltip-inner {
+    background: none;
+    border-radius: 0;
+    color: #3e3d3d;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+}
+.about-us .tooltip-arrow,
+.contact-us .tooltip-arrow {
+    display: none;
+}
+.contact-title {
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 150px;
+    font-size: 24px;
+}
+.tl-contact-border{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    height: 2px;
+    margin: 2px auto 15px;
+    width: 90px;
+}
+.contact-text
+{
+	color: #fff;
+	font-size:15px;
+	text-align: left;
+    line-height: 24px;
+}
+.tl-home a,.tl-about a,.tl-service a,.tl-contact a {
+    position: absolute;
+    top: 19%;
+    height: 48px;
+    width: 48px;
+    background-color: rgba(254,254,254,.3);
+    color: #ffffff;
+    text-align: center;
+    line-height: 44px;
+    right: 1.5%;
+    font-size: 30px;
+    z-index: 999;
+    display: block;
+}
+.tl-home a{
+    top: 19%;
+    color: #ffffff;
+}
+.tl-about a{
+    top: 28%;
+}
+.tl-service a{
+    top: 37%;
+}
+.tl-contact a{
+    top: 46%;
+}
+.about-us a:hover,
+.contact-us a:hover {
+    text-decoration: none;
+}
+.tl-about-content h1,.tl-contact-content h1,.tl-service-content h1{
+    color: #ffffff;
+    font-size: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.tl-about-content,.tl-contact-content,.tl-service-content{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 150px 95px;
+    padding-bottom: 25%;
+}
+.tl-about-top-info{
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 24px;
+    padding-left: 45px;
+}
+.tl-about-bottom-contact-info{
+    padding-top: 27px;
+    padding-left: 49px;
+}
+.tl-about-bottom-contact-info h3{
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.tl-about-bottom-contact-info p{
+    margin: 0;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 24px;
+}
+.tl-about-bottom-contact-info-email{
+    float: left;
+    padding-right: 55px;
+    text-align: center;
+}
+.tl-about-bottom-contact-info-address{
+    float: left;
+    text-align: center;
+}
+.tl-email i{
+    font-size: 37px;
+}
+.tl-map i{
+    font-size: 32px;
+}
+.tl-contact-icon-box {
+    float: left;
+    padding-right: 55px;
+    text-align: center;
+}
+.tl-email i
+{
+	background-color: transparent !important;
+	font-size: 28px;
+}
+
+.tl-about-top-info input[type="text"] {
+    border: 1px solid rgba(107, 90, 89, 0.6);
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    height: 38px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    width: 100%;
+    background: rgba(194, 187, 179, 0.6);
+    outline: none;
+    font-size: 15px;
+    cursor: default;
+}
+.tl-about-top-info textarea {
+    background: rgba(194, 187, 179, 0.6);
+    border: 1px solid rgba(107, 90, 89, 0.6);
+    color: rgb(255, 255, 255);
+    height: 160px;
+    margin-bottom: 15px;
+    overflow: auto;
+    padding: 10px 20px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    font-size: 15px;
+    cursor: default;
+}
+.contact-btn-submit {
+    background-color: rgba(194, 187, 179, .6);
+    border: medium none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    height: 38px;
+    line-height: 30px;
+    width: 90px;
+	display:block;
+    outline: none;
+}
+/* all */
+::-webkit-input-placeholder { color:#ffffff; }
+::-moz-placeholder { color:#ffffff; } /* firefox 19+ */
+:-ms-input-placeholder { color:#ffffff; } /* ie */
+input:-moz-placeholder { color:#ffffff; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #ffffff;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #ffffff;
+}
+
+
+
+.tl-contact-bottom-info{
+   padding-top: 10px;
+}
+.tl-contact-bottom-info i{
+    font-size: 20px;
+}
+.tl-contact-bottom-info p{
+    margin: 0;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 24px;
+}
+.tl-contact-bottom-info-phone{
+    float: left;
+    padding-right: 30px;
+    text-align: center;
+}
+
+/*About/Contact css end here*/
+
+.themology .modal {
+    background-image: url('../img/bg_photo.png');
+    background-position: center bottom;
+    width: 100%;
+    background-size: cover;
+}
+.pop-up {
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    border: none;
+}
+.cls-pop {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: normal;
+    z-index: 999;
+}
+.cls-pop:hover {
+    color: #ff382e;
+    text-decoration: none;
+}
+.pop-up-cnt {
+    text-align: center;
+}
+.pop-up-cnt i {
+    color: #ffffff;
+}
+.pop-up-cnt h4 {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+.pop-up-cnt .cnt-wrap {
+    padding-top: 30px;
+}
+.features {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 14px;
+}
+.features li {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 28px;
+    color: #dadada;
+    width: 33%;
+    float: left;
+}
+.gmap {
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+/*----------------------------------------
+ 10. Template color option
+ -----------------------------------------*/
+
+/*Template color option start here*/
+
+.template-colors {
+    margin: 40px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+.template-colors li {
+    margin: 0 2px;
+    padding: 0;
+    display: inline-block;
+    font-size: 26px;
+}
+.template-colors li a {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    display: block;
+    width: 42px;
+    height: 42px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.template-colors li a:hover {
+    border: 1px solid #999;
+}
+.template-colors li a.blue {
+    background-color: #00d2ff;
+}
+.template-colors li a.green {
+    background-color: #aaee06;
+}
+.template-colors li a.yellow {
+    background-color: #ffcc00;
+}
+/*Template color option end here*/
+
+
+
+/*----------------------------------------
+ 11. Responsive css
+ -----------------------------------------*/
+
+/*Responsive css start here*/
+
+@media only screen and (max-device-width: 1150px) {
+    .about-us a {
+        top: 2%;
+        margin-left: -20px;
+        left: 47.5%;
+    }
+    .contact-us a {
+        top: 2%;
+        margin-right: -20px;
+        right: 47.5%;
+    }
+    .about-us .tooltip,
+    .contact-us .tooltip {
+        display: none !important;
+    }
+    .about-us .tooltip-arrow,
+    .contact-us .tooltip-arrow {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .count-down li div,
+    .count-down li canvas {
+        width: 230px !important;
+        height: 230px !important;
+    }
+    .contact-form input {
+        padding: 0 26% 0 17%;
+    }
+    .count-down li input {
+        margin: 36px 0 0 -187px !important;
+    }
+    .hide-med {
+        display: none !important;
+    }
+    .contact-form .btn-submit {
+        font-size: 18px;
+    }
+    .features li {
+        width: 50%;
+    }
+}
+@media only screen and (max-device-width: 767px) {
+    .about-us a {
+        left: 46%;
+    }
+    .contact-us a {
+        right: 46%;
+    }
+}
+@media only screen and (max-device-width: 600px) {
+    .about-us a {
+        left: 44%;
+    }
+    .contact-us a {
+        right: 44%;
+    }
+    .features li {
+        width: 100%;
+        float: none;
+    }
+}
+@media only screen and (max-device-width: 568px) {
+    .contact-form input {
+        padding: 0 40% 0 24%;
+    }
+    .paw-carousel-item {
+        height: 320px !important;
+    }
+    .contact-form .btn-submit {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        width: 80px;
+    }
+}
+
+
+/*Responsive css end here*/
+
+
+/*----------------------------------------
+ 12. custom css
+ -----------------------------------------*/
+
+.main-title-content p {
+    font-size: 23px;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 63%;
+    line-height: 36px;
+}
+.subscribe-inner-content, .subscribe-inner-bottom-content {
+    font-size: 14px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+    width: 100%;
+    color: #000;
+    text-transform: uppercase;
+}
+.subscribe-inner-bottom-content{
+    padding-bottom: 50px;
+}
+.subscribe-inner-bottom-content-left {
+    float: left;
+    width: 75%;
+}
+.subscribe-inner-bottom-content-left input.form-control {
+    background-color: #f1f1ee;
+    border-radius: 0;
+    height: 45px;
+}
+.subscribe-inner-bottom-content-left input.form-control:focus{
+    box-shadow: none;
+    border-color: #3e454d;
+}
+.subscribe-inner-bottom-content-right {
+    float: left;
+    width: 24.5%;
+}
+.subscribe-inner-bottom-content-right .btn {
+    background-color: #3e454d;
+    border: 0 none;
+    border-radius: 0;
+    min-height: 44px;
+    display: block;
+    margin-left: 20px;
+    max-width: 185px;
+}
+.subscribe-content-all {
+    background-color: #ffffff;
+    padding:50px 0 100px;
+}
+.subscribe-content-all-about {
+    background-color: #ffffff;
+    padding:50px 0 100px;
+}
+.tg-subscribe-inner-content{
+    width: 73%;
+    margin: 0 auto;
+}
+.tg-footer-content{
+    background-color: #3e454d;
+    padding-top: 10px;
+}
+
+.single-layout-page {
+    position: absolute;
+    right: 10px;
+    top: 130px;
+}
+.tg-single-box a {
+    background-color: #767178;
+    display: block;
+    height: 50px;
+    margin-bottom: 10px;
+    width: 55px;
+}
+.count-down-wrapper ul li div canvas{
+    height: 140px !important;
+    width: 140px !important;
+}
+.count-down-wrapper ul li input{
+    margin-top: 10px !important;
+    margin-left: -150px !important;
+    font-size: 72px !important;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------
+    13. boot overwrite css
+   --------------------------------------*/
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+
+
+
+/* ---------------------------------------
+       14. Service css
+   --------------------------------------*/
+.tl-service-content > p{
+    padding-bottom: 20px;
+}
+.tl-single-service{
+    padding-bottom: 20px;
+}
+.tl-service-left{
+    float: left;
+    padding-right: 20px;
+    width: 13%;
+    padding-top: 8px;
+}
+.tl-service-right{
+    float: left;
+    width: 87%;
+}
+.tl-service-content{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 24px;
+}
+.tl-service-icon i {
+    background-color: rgba(194, 187, 179, 0.6);
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 48px;
+    height: 90px;
+    line-height: 86px;
+    text-align: center;
+    width: 90px;
+}
+
+
+
+/* ----------------------
+    15. Navigation
+   ----------------------- */
+
+.navigation span {
+    display:none;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.33);
+    text-transform:uppercase;
+    padding:0 0;
+}
+.navigation i {
+    font-size: 30px;
+    margin-top: 6px;
+}
+.about-link, .back-right {
+    top:50%;
+}
+.contact-link, .back-left{
+    margin-top:0;
+}
+.about-link i{
+    position:absolute;
+    top:2px;
+    left:22px;
+}
+.about-link span {
+    margin-left:30px;
+    padding-left:10px;
+    border-left:1px solid #fff;
+}
+.contact-link span {
+    margin-right:30px;
+    padding-right:10px;
+    border-right:1px solid #fff;
+    font-size: 14px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+.contact-link i {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+.patterns {
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url(../img/patterns/pattern1.png);
+}
+.water-filter .large-header {
+    background-image: url('../img/bg_photo.png');
+    background-position: center bottom;
+}
+.tl-large-header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+
+
